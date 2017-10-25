@@ -1,20 +1,70 @@
-# char-rnn-generate-Chinese-poem
-char-rnn tensorflow implementation - generate Chinese poem
+##Char-rnn to generate chinese acient poems
 
-dynamic rnn - 1 layer 
+##Tensorflow char-rnn based on LSTM
 
-rnn cell - lstm
+A Char-rnn model to generate chinese ancient poems.
 
-one hot encode as word embedding method
+Project is implemented in Tensorflow and thanks to [1] for the inspiration and the share of training data
 
-Adam training method
 
-python - 3.5
+##Project Dependency:
 
-tensorflow - 1.1
+Python 3.6
 
-Code implemented based on [1]
+Tensorflow 1.1
 
-Referencde:
+##Result:
+
+
+    *******1 layer LSTM Result*******
+    
+    阳秋鹿出塞，谪宦自怀秦。颔下笙竽巧制，星将道剑知。铿尔鸾鹊恋，霜驾与河冰。臣病无郎地，频应书陆传。犹惭展中叟，取我谢公田。 
+    
+    圣代告善，侍坐入调神。今时命学大，自望凰公子。空床积泪易，门外枕江寒。楚雨送春蝉，醉眠潮送飏。遣妾更思君，金谷为谁得。正郁一相如，不睡正登载。 
+    
+    悠悠太液畔，山势去何安。风径花低露，霜英日夜长。随风宛日上，露簟直孤冰。风雨疑遗烬，霜齐去误锄。还期天外蕊，却听石床灰。世界唯忠信，惭非养素方。 
+    
+    谋身加海见，相见亦逢高。地气阴云下，师门古邑青。倚坟衣锦嫩，羽服洞妖红。 
+    
+    忽起城边妆，尘飞杜石坛。江上摇初箭，毛鳞逐素风。龙神真晓集，画舸泊双鱼。紫萼光初合，浓梧雨初过。文场非天乐，试画本方期。便冀延黄日，清垂立所如。 
+    
+    蓼村绿筱水，菡萏来扶疏。火彩群峰海，霜林四大层。文场未思火，郊老见皇华。丝柳虚空影，龙梭夜不流。云林常对至，并照海山分。 
+    
+    不安流水镜，细火道流清。云足不寂寞，住来杂树新。神明未有计，能节不由来。影为笼孤月，疑疑野却阳。杜山能与我，应是世间尘。 
+    
+    星乌地不来，汉夜流分遥。猿鸟寂寞处，深掩路何多。腕凤皮珠湿，瑶坛为芳草。益思意不好，光短更谁饥。露下凝霜老，风清正寂寥。难称闲坐梦，忽向定中樵。 
+    
+    崇有雨和院，闲庭月自明。新丰犹食监，称得闻嚣时。不赋人空事，萧萧玩山色。朱门与我道，诗兴亭上章。霜华结幽影，庭际荷枯黍。浩歌愁来方，我有梯云术。 
+    
+    纱阁云如离，有水坐深清。运行临汉际，上柳自挥丝。旧列登台阁，潇湘惬景稀。曹溪牛畔夜，洒步落佳田。饮药徒何望，深知遂比秦。炎方看太真，必在黄河开。 
+    
+    
+
+
+    *******2 layers LSTM Result*******
+    
+    山下已成封，谁怜退与天。欢欢有台陌，拙老赴送君。睥睨平春酒，贫茶夏熟人。振囊皇甫理，叱掌拂官低。睿藻皆终日，何忧藉酒尊。 
+    
+    喜见西陵讲，今朝闲苦怀。零除经富贵，日晚律多秋。每却关中子，仍辞向此身。知非长冉礼，已返计栖缘。万事犹安浅，开颜惜泪垂。 
+    
+    万里遭来尉，为我鲁阳时。谢脁罗时阁，千山万亩新。紫花擎镜里，芳麝写三心。近对膏濡滴，惭为寺状深。方厨朝野畔，独与石参差。无计知难睹，良人来复过。 
+    
+    相与劳情路，喧喧燎海尘。难追愁别出，并出莫嗟情。或撤浮鱼网，呈鹓戏浪开。叨陪驻丽句，抽卷静宜鱼。此日尘端际，登楼不举行。 
+    
+    误欲赏同同，优游积昔迁。平吞元献，游郁几功心。几物心家置，惟逢素素新。心如村住意，窗外破棋封。片劫离初散，星芒梵更鲜。百年年不免，他日惠玄言。 
+    
+    竹阁侧惊山，闻香缆客船。有时人问我，心寂分相逢。况有幽窗静，凉风动作痕。寒春若添讲，清响风额倾。面益此之殊，其如颜未如。钱来皆学即，却得义潜膏。愁杀诗怀少，微牛常此身。 
+    
+    新命鸟于仙，功成物议臣。纵增瞻顺面，唯作称欢身。方珏晨横轴，出筵丹汉重。旧经缘故吏，开户避麟名。官自听生竹，僧知止读中。翦阶斋沐日，苍旻出清灰。 
+    
+    田家开剪禾。婢校领薰阳，，宣王属骋坤。太武虚虚御，千官每在邦。病来君誉悌，贤曲尚潇骚。化面方西寿，君精自管群。古人中可取，光彩只难为。惟惭从此去，非耻奈何尘。 
+    
+    出门投流一生来，鬓发霜无两一杯。朱绂文贤还未得，一郎窥镜即时停。房持宋杜经阴叠，夏里青山此梦空。垂钓行人应蹑翠，夜来川上月生情。 
+    
+    天净无儿成赋分，公卿且笑往方私。尽将山色忘风景，只在白云寻旧廊。野碓舂蓝口晓，潮浮古冢犹重。终日有知地，漳川中灌移。 
+	
+Though the generated poems meet the formats of standard poems, the results are not that elegant. A cerntain part of the sentenses does not make sense... It seems models prefer to generate 5 letter sentences rather than 7 ones  
+ 
+##Reference:
 
 [1]http://blog.topspeedsnail.com/archives/10542
