@@ -1,4 +1,4 @@
-#Char-rnn to generate chinese acient poems
+# Char-rnn to generate chinese acient poems
 
 ##Tensorflow char-rnn based on LSTM
 
